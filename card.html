@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="card.css">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div class="container">
+        <button type="submit" class="btn" onclick="openPopup()">Checkout</button>
+        <div class="popup" id="popup">
+            <img src="ceklis2.png" alt="">
+            <h4>Terimakasih telah membeli produk kami semoga anda puas!!</h4>
+            <h4>Thank you for buying our product hope you are satisfied!!</h4>
+            <p>Jika masih ingin berbelanja,silahkan klik tombol. </p>
+            <button type="button" onclick="closePopup"><a href="produk.html">Belanja</button>
+        </div>
+    </div>
+
+    <script>
+        let popup =document.getElementById("popup");
+
+        function openPopup(){
+            popup.classList.add("open-popup");
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
+    </script>
+    <!-- membuat popup dengan tampilan puas dan tidaknya pelyanan kami -->
+</body>
+</html>

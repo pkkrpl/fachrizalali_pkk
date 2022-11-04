@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url('');
+            background-repeat: no-repeat;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>apa puas dengan pelayanan kami?</h1>
+    <h1>pemerintahan</h1>
+    <h1>konoha</h1>
+
+    <div id="by" style="position: absolute; left: 150px; top: 200px;">
+    <input type="button" value="sangat puas" onclick="A1()"/>
+</div>
+    
+<div id="Bn" style="position: absolute; left:150px; top: 240px;">
+<input type="button" value="tidak puas" onmouseover="A2()"/>
+</div>
+
+</body>
+<script type="text/javascript">
+    flag=1
+
+    function A1()
+    {
+        alert("bagus sekarang")
+    }
+
+    function A2()
+    {
+        if(flag==1){
+            Bn.style.top=240
+            Bn.style.left=100
+            flag=2
+        }else if(flag==2){
+            Bn.style.top=240
+            Bn.style.left=190
+            flag=1
+        }
+    }
+</script>
+</html>
